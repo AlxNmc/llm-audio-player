@@ -6,6 +6,8 @@ This command-line app was created as an exercise in thread management using the 
 
 The app loads raw wave data using an intentionally slow file-loading library to mimick a bandwidth-limited source. The data is loaded in 512k batches and then processed in 2k chunks by 20 concurrent threads using the Microsoft waveOut API.
 
+The logic for the app is located in the PA1 directory. The other directories contain needed libraries and resources.
+
 ## Installation
 
 This is a Visual Studio 2019 project. To compile on your own machine, ensure this version of Visual Studio is installed, then download the source code and launch the project from the solution file. 
