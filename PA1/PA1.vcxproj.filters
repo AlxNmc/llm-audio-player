@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="__Framework">
+      <UniqueIdentifier>{24fb284b-3d75-4853-9a0d-d4d64a834fe0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="__ThreadHelper">
+      <UniqueIdentifier>{4ada7d0f-5dcf-4d5f-832c-b33f92f26eb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs">
+      <UniqueIdentifier>{18631a47-7106-4489-85ba-e2a6e47d7ece}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Data">
+      <UniqueIdentifier>{7b90ca96-b0f8-4b44-bc72-ad6c4b578d68}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Framework\Framework.h">
+      <Filter>__Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThreadHelper\ThreadDictionary.h">
+      <Filter>__ThreadHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThreadHelper\ThreadHelper.h">
+      <Filter>__ThreadHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThreadHelper\WindowsWrapper.h">
+      <Filter>__ThreadHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\File_Slow\include\File_Slow.h">
+      <Filter>_Libs</Filter>
+    </ClInclude>
+    <ClInclude Include="FileT.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CoordinatorT.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaybackT.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WaveBufferT.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CircularQueue.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadCounter.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\ThreadHelper\ThreadDictionary.cpp">
+      <Filter>__ThreadHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThreadHelper\ThreadHelper.cpp">
+      <Filter>__ThreadHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CoordinatorT.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileT.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlaybackT.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WaveBufferT.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CircularQueue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadCounter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Framework\__DO NOT MODIFY__">
+      <Filter>__Framework</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\dist\File_Slow\lib\File_Slow_Debug.lib">
+      <Filter>_Libs</Filter>
+    </Library>
+    <Library Include="..\Dist\File_Slow\lib\File_Slow_Release.lib">
+      <Filter>_Libs</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\Data\wave_0.wav">
+      <Filter>_Data</Filter>
+    </Media>
+    <Media Include="..\Data\wave_1.wav">
+      <Filter>_Data</Filter>
+    </Media>
+    <Media Include="..\Data\wave_2.wav">
+      <Filter>_Data</Filter>
+    </Media>
+    <Media Include="..\Data\wave_3.wav">
+      <Filter>_Data</Filter>
+    </Media>
+    <Media Include="..\Data\wave_4.wav">
+      <Filter>_Data</Filter>
+    </Media>
+    <Media Include="..\Data\wave_5.wav">
+      <Filter>_Data</Filter>
+    </Media>
+    <Media Include="..\Data\wave_6.wav">
+      <Filter>_Data</Filter>
+    </Media>
+    <Media Include="..\Data\wave_7.wav">
+      <Filter>_Data</Filter>
+    </Media>
+    <Media Include="..\Data\wave_8.wav">
+      <Filter>_Data</Filter>
+    </Media>
+    <Media Include="..\Data\wave_9.wav">
+      <Filter>_Data</Filter>
+    </Media>
+    <Media Include="..\Data\wave_10.wav">
+      <Filter>_Data</Filter>
+    </Media>
+    <Media Include="..\Data\wave_11.wav">
+      <Filter>_Data</Filter>
+    </Media>
+    <Media Include="..\Data\wave_12.wav">
+      <Filter>_Data</Filter>
+    </Media>
+    <Media Include="..\Data\wave_13.wav">
+      <Filter>_Data</Filter>
+    </Media>
+    <Media Include="..\Data\wave_14.wav">
+      <Filter>_Data</Filter>
+    </Media>
+    <Media Include="..\Data\wave_15.wav">
+      <Filter>_Data</Filter>
+    </Media>
+    <Media Include="..\Data\wave_16.wav">
+      <Filter>_Data</Filter>
+    </Media>
+    <Media Include="..\Data\wave_17.wav">
+      <Filter>_Data</Filter>
+    </Media>
+    <Media Include="..\Data\wave_18.wav">
+      <Filter>_Data</Filter>
+    </Media>
+    <Media Include="..\Data\wave_19.wav">
+      <Filter>_Data</Filter>
+    </Media>
+    <Media Include="..\Data\wave_20.wav">
+      <Filter>_Data</Filter>
+    </Media>
+    <Media Include="..\Data\wave_21.wav">
+      <Filter>_Data</Filter>
+    </Media>
+    <Media Include="..\Data\wave_22.wav">
+      <Filter>_Data</Filter>
+    </Media>
+  </ItemGroup>
+</Project>

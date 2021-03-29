@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{ED602E5D-031C-4AF8-B6A6-4B34E0073B27}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Basics1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NO_COQ;_DEBUG;_CONSOLE;WINDOWS_TARGET_PLATFORM="$(TargetPlatformVersion)";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Framework;$(SolutionDir)ThreadHelper;$(SolutionDir)Data;$(SolutionDir)Dist\File_Slow\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WarningVersion>
+      </WarningVersion>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PrecompiledHeaderOutputFile />
+      <ForcedIncludeFiles>Framework.h</ForcedIncludeFiles>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NO_COQ;NDEBUG;_CONSOLE;WINDOWS_TARGET_PLATFORM="$(TargetPlatformVersion)";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Framework;$(SolutionDir)ThreadHelper;$(SolutionDir)Data;$(SolutionDir)Dist\File_Slow\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WarningVersion>
+      </WarningVersion>
+      <PrecompiledHeaderOutputFile />
+      <ForcedIncludeFiles>Framework.h</ForcedIncludeFiles>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\ThreadHelper\ThreadDictionary.cpp" />
+    <ClCompile Include="..\ThreadHelper\ThreadHelper.cpp" />
+    <ClCompile Include="CircularQueue.cpp" />
+    <ClCompile Include="CoordinatorT.cpp" />
+    <ClCompile Include="FileT.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="PlaybackT.cpp" />
+    <ClCompile Include="ThreadCounter.cpp" />
+    <ClCompile Include="WaveBufferT.cpp" />
+    <ClInclude Include="..\dist\File_Slow\include\File_Slow.h" />
+    <ClInclude Include="..\Framework\Framework.h" />
+    <ClInclude Include="..\ThreadHelper\ThreadDictionary.h" />
+    <ClInclude Include="..\ThreadHelper\ThreadHelper.h" />
+    <ClInclude Include="..\ThreadHelper\WindowsWrapper.h" />
+    <ClInclude Include="CircularQueue.h" />
+    <ClInclude Include="CoordinatorT.h" />
+    <ClInclude Include="FileT.h" />
+    <ClInclude Include="PlaybackT.h" />
+    <ClInclude Include="ThreadCounter.h" />
+    <ClInclude Include="WaveBufferT.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Framework\__DO NOT MODIFY__" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\dist\File_Slow\lib\File_Slow_Debug.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="..\Dist\File_Slow\lib\File_Slow_Release.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\Data\wave_0.wav" />
+    <Media Include="..\Data\wave_1.wav" />
+    <Media Include="..\Data\wave_10.wav" />
+    <Media Include="..\Data\wave_11.wav" />
+    <Media Include="..\Data\wave_12.wav" />
+    <Media Include="..\Data\wave_13.wav" />
+    <Media Include="..\Data\wave_14.wav" />
+    <Media Include="..\Data\wave_15.wav" />
+    <Media Include="..\Data\wave_16.wav" />
+    <Media Include="..\Data\wave_17.wav" />
+    <Media Include="..\Data\wave_18.wav" />
+    <Media Include="..\Data\wave_19.wav" />
+    <Media Include="..\Data\wave_2.wav" />
+    <Media Include="..\Data\wave_20.wav" />
+    <Media Include="..\Data\wave_21.wav" />
+    <Media Include="..\Data\wave_22.wav" />
+    <Media Include="..\Data\wave_3.wav" />
+    <Media Include="..\Data\wave_4.wav" />
+    <Media Include="..\Data\wave_5.wav" />
+    <Media Include="..\Data\wave_6.wav" />
+    <Media Include="..\Data\wave_7.wav" />
+    <Media Include="..\Data\wave_8.wav" />
+    <Media Include="..\Data\wave_9.wav" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
